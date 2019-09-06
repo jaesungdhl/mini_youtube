@@ -1,0 +1,8 @@
+.search-list-container {
+    display: flex;
+    justify-content: center;
+}
+.item-container {
+    width: 862px;
+    height: 138px;
+}

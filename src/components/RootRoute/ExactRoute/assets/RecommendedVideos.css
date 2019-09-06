@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.container {
+    width: 77%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    align-self: flex-start;
+}
+
+.loading_icon {
+    width: 50px;
+    height: 50px;
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.video-list-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.thumbnail-container {
+    width: 210px;
+    height: 117.5px;
+}
+
+.video-description-container {
+    width: 210px;
+    height: 84px;
+}
+
+.video-title {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 14px;
+    width: 186px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.channel-name {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 13px;
+    color:rgb(96, 96, 96);
+}
+
+.thumbnail-img {
+    width: inherit;
+    height: inherit;
+}
+
+.statistics-container {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    color:rgb(96, 96, 96);
+}
+
+.fa-circle {
+    transform: scale(0.30);
+}
+
+.list-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-thumbnail-container {
+    width: 246px;
+    height: 100%;
+}
+
+.video-description {
+    font-size: 13px;
+    overflow: hidden;
+    max-height: 36px;
+    color:rgb(96, 96, 96);
+}
+
+@keyframes loading{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}

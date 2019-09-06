@@ -1,12 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// React Module
+import React from "react";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM Module
+import ReactDOM from "react-dom";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// React-Redux Module
+import { Provider } from "react-redux";
+
+// Components Module;
+import App from "./components/App";
+
+// Store Module
+import Store from "./redux/Store/index";
+
+ReactDOM.render(
+    < Provider store={ Store }>
+        < App />
+    </ Provider > ,
+    document.querySelector("#root")
+);
